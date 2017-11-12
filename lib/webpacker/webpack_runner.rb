@@ -8,7 +8,7 @@ module Webpacker
       cmd = [ "#{@node_modules_path}/.bin/webpack", "--config", @webpack_config ] + @argv
       
       puts "ENV: " + env
-      puts "CMD: " + puts cmd
+      puts "CMD: " + cmd
 
       Dir.chdir(@app_path) do
         exec env, *cmd
